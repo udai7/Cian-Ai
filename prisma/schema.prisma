@@ -97,3 +97,41 @@ model IndustryInsight {
 
   @@index([industry])
 }
+
+// AI Mock Interview related models
+model AiInterview {
+  id            String    @id @default(cuid())
+  userId        String    // Clerk user ID
+  type          String    // "technical", "behavioral", "mixed"
+  role          String    // The job role (e.g., "Software Engineer")
+  level         String    // "entry", "intermediate", "senior"
+  techStack     String[]  // Array of technologies selected
+  questions     String[]  // Array of questions for the interview
+  status        String    // "pending", "completed", "cancelled"
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  // Relation to the feedback
+  feedback      InterviewFeedback?
+
+  @@index([userId])
+}
+
+model InterviewFeedback {
+  id              String    @id @default(cuid())
+  interviewId     String    @unique
+  interview       AiInterview @relation(fields: [interviewId], references: [id])
+  transcript      Json      // Array of {role: "user" | "assistant", content: string}
+  
+  // Scores and evaluation
+  totalScore      Float     // Overall score out of 100
+  categoryScores  Json      // Array of {name: string, score: float, comment: string}
+  strengths       String[]  // Array of strengths
+  areasForImprovement String[]  // Array of areas for improvement
+  finalAssessment String    // Overall feedback summary
+  
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([interviewId])
+}
