@@ -107,15 +107,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 📞 Contact
 
 - **Email**: [udaid347@gmail.com](mailto:udaid347@gmail.com)
 - **GitHub**: [@udai7](https://github.com/udai7)
-- **Website**: [udaidas.com](https://udaidas.com)
+- **Website**: [portfolio-website-udai.vercel.app]([https://udaidas.com](https://portfolio-website-udai.vercel.app/))
 
 ## 🙏 Acknowledgments
 
