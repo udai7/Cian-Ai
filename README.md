@@ -111,7 +111,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 - **Email**: [udaid347@gmail.com](mailto:udaid347@gmail.com)
 - **GitHub**: [@udai7](https://github.com/udai7)
-- **Website**: [portfolio-website-udai.vercel.app]([https://udaidas.com](https://portfolio-website-udai.vercel.app/))
+- **Website**: [portfolio-website-udai.vercel.app](https://portfolio-website-udai.vercel.app/)
 
 ## 🙏 Acknowledgments
 
